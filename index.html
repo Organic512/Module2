@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+
+#work {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Optional: Center items horizontally */
+}
+
+.work-img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    margin: 0.5em 0;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Angela</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#work">My Work</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is Angela, I'm passionate about full-stack coding and how it challenges me. The dynamic world of technology has always excited me, and I find joy in the continuous process of learning new things. I thrive on challenges and embrace change as an opportunity for growth.
+            Collaboration is a cornerstone of my approach to work. I believe that great things happen when individuals with diverse skills and perspectives come together. Working in a team is not just about achieving common goals; it's about creating an environment where each member can contribute their best.
+            I am not only looking to grow my own skills but also to contribute to the growth of any team I have the pleasure to be a part of. I believe in fostering a culture of learning, open communication, and mutual support. Let's build something amazing together!
+        </p>
+    </section>
+
+    <section id="work">
+        <h2>My Work</h2>
+
+        <img src="DNDdiceroller.jpg" alt="DND Dice Roller" class="work-img" onclick="openApp('app1.html')">
+        <img src="Pokemonbinder.jpg" alt="Pokemon Binder" class="work-img" onclick="openApp('app2.html')">
+        <img src="Globalcuisine.jpg" alt="Global Cuisine" class="work-img" onclick="openApp('app3.html')">
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: </p>
+        <p>Phone: </p>
+    </section>
+
+    <footer>
+        &copy; My Portfolio
+    </footer>
+
+    <script>
+        function openApp() {
+            var githubRepoUrl = "https://github.com/Organic512/Module2";
+            window.location.href = githubRepoUrl;
+        }
+    </script>
+    
+
+</body>
+
+</html>
